@@ -1,6 +1,93 @@
 @import url('reset.css');
 
 body {
-  background: #fff;
+  background: #f9f9f9;
   color: #000;
+}
+
+header {
+  background: #fff;
+
+  height: 56px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+
+  position: sticky;
+  top: 0px;
+}
+header button {
+  background: transparent;
+
+  display: flex;
+
+  border: none;
+}
+
+header .left-icons {
+  margin: 0 24px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 32px;
+}
+header .left-icons a,
+header .left-icons .logo {
+  height: 20px;
+}
+
+header #search-container {
+  width: 404px;
+  height: 40px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: stretch;
+}
+
+header #search-container button,
+header #search-container input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+header #search-container button {
+  width: 57px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+header #search-container button:hover {
+  background-color: #f0f0f0;
+}
+
+header #search-container img {
+  width: 24px;
+  height: 24px;
+
+  margin-top: 2px;
+  margin-right: 7px;
+}
+
+header #search-container input {
+  border-right: 0px;
+  flex: 1;
+}
+
+header .right-icons {
+  margin: 0 24px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 24px;
+}
+
+.flow {
+  height: 120vh;
 }
